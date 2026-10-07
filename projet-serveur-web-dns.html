@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serveur Web &amp; DNS | Ibrahim DIALLO</title>
+  <meta name="description" content="Un serveur Debian qui héberge un site web avec Apache, joignable par un nom et administré à distance.">
+  <meta name="theme-color" content="#070b16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="projets">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html#accueil" aria-label="Ibrahim DIALLO, accueil">
+        <span class="brand-mark" aria-hidden="true">ID</span>
+        <span>Ibrahim DIALLO</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+      <ul class="nav-links" id="menu">
+
+        <li><a href="index.html#profil" data-key="profil">Profil</a></li>
+
+        <li><a href="index.html#competences" data-key="competences">Compétences</a></li>
+
+        <li><a href="index.html#projets" data-key="projets" class="is-active" aria-current="page">Projets</a></li>
+
+        <li><a href="index.html#parcours" data-key="parcours">Parcours</a></li>
+
+        <li><a href="stage.html" data-key="stage">Stage</a></li>
+
+        <li><a href="index.html#cv" data-key="cv">CV</a></li>
+
+        <li><a href="index.html#contact" data-key="contact" class="nav-cta">Contact</a></li>
+
+      </ul>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="page-head">
+      <div class="container">
+        <a class="breadcrumb" href="index.html#projets">&larr; Tous les projets</a>
+        <p class="card-kicker">Systèmes</p>
+        <h1 style="font-size: clamp(2.2rem, 5vw, 3.6rem);">Serveur Web &amp; DNS</h1>
+        <p class="lead">Un serveur Debian qui héberge un site web avec Apache, joignable par un nom et administré à distance.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container detail-grid">
+        <div>
+          <h2 style="font-size: 1.6rem;">Objectif</h2>
+          <p style="color: var(--muted);">Mettre en ligne un site web personnel sur un serveur que j&#x27;ai installé et configuré moi-même, et pouvoir l&#x27;administrer à distance.</p>
+          <h2 style="font-size: 1.6rem; margin-top: 2rem;">Ce que j'ai réalisé</h2>
+          <ul class="steps">
+
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Installation d&#x27;un serveur Debian et configuration de sa carte réseau.</span></li>
+
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Installation et configuration d&#x27;Apache pour publier le site.</span></li>
+
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Mise en place de la résolution de noms avec le DNS.</span></li>
+
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Administration à distance avec SSH et transfert des fichiers avec WinSCP.</span></li>
+
+          </ul>
+        </div>
+        <aside class="card side-card">
+          <h3>Technologies</h3>
+          <ul class="chips">
+
+            <li>Debian</li>
+
+            <li>Apache</li>
+
+            <li>DNS</li>
+
+            <li>SSH</li>
+
+            <li>WinSCP</li>
+
+          </ul>
+        </aside>
+      </div>
+
+      <div class="container other-projects">
+        <h2 style="font-size: 1.6rem;">Autres projets</h2>
+        <div class="grid grid-3">
+
+
+
+
+          <a class="card" href="projet-active-directory.html">
+            <p class="card-kicker">Systèmes</p>
+            <h3>Active Directory &amp; DNS</h3>
+            <p>Un domaine Windows avec utilisateurs, groupes et poste client intégré, selon le modèle AGDLP.</p>
+            <span class="link-more">Lire le projet</span>
+          </a>
+
+
+
+          <a class="card" href="projet-architecture-reseau.html">
+            <p class="card-kicker">Réseaux</p>
+            <h3>Architecture réseau</h3>
+            <p>Un réseau segmenté en VLAN, simulé et testé dans Cisco Packet Tracer.</p>
+            <span class="link-more">Lire le projet</span>
+          </a>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ibrahim DIALLO, Étudiant BTS SIO, option SISR</p>
+      <ul>
+        <li><a href="index.html#profil">Profil</a></li>
+        <li><a href="index.html#projets">Projets</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="cv/C_V_2026.pdf">CV</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Photo agrandie">
+    <div class="lightbox-inner">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+      <p class="lightbox-caption"></p>
+    </div>
+    <button class="lb-btn lb-close" type="button" aria-label="Fermer">&times;</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Photo précédente">&lsaquo;</button>
+    <button class="lb-btn lb-next" type="button" aria-label="Photo suivante">&rsaquo;</button>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

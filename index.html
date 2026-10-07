@@ -1,233 +1,411 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - BTS SIO</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f4;
-            color: #222;
-        }
-
-        header {
-            background-color: #1e293b;
-            color: white;
-            padding: 20px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            font-size: 24px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        section {
-            padding: 60px 10%;
-        }
-
-        #accueil {
-            background-color: #0f172a;
-            color: white;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        #accueil h2 {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
-        #accueil p {
-            font-size: 18px;
-        }
-
-        .projets {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
-
-        .projet {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            width: 30%;
-            min-width: 250px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .projet h3 {
-            margin-bottom: 10px;
-            color: #2563eb;
-        }
-
-        .competences {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .competence {
-            background-color: #2563eb;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 20px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #1e293b;
-            color: white;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ibrahim DIALLO | Étudiant BTS SIO SISR, réseaux et systèmes</title>
+  <meta name="description" content="Portfolio d&#x27;Ibrahim DIALLO, étudiant en BTS SIO option SISR : projets réseaux et systèmes, stage chez ERE Numérique, CV et contact.">
+  <meta name="theme-color" content="#070b16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body data-page="accueil">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html#accueil" aria-label="Ibrahim DIALLO, accueil">
+        <span class="brand-mark" aria-hidden="true">ID</span>
+        <span>Ibrahim DIALLO</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span></button>
+      <ul class="nav-links" id="menu">
 
-<body>
+        <li><a href="index.html#profil" data-key="profil">Profil</a></li>
 
-    <!-- Navigation -->
-    <header>
-        <h1>Mon Portfolio</h1>
+        <li><a href="index.html#competences" data-key="competences">Compétences</a></li>
 
-        <nav>
-            <a href="#accueil">Accueil</a>
-            <a href="#apropos">À propos</a>
-            <a href="#competences">Compétences</a>
-            <a href="#projets">Projets</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <li><a href="index.html#projets" data-key="projets">Projets</a></li>
 
-    <!-- Accueil -->
-    <section id="accueil">
-        <h2>Bonjour, je suis Prénom Nom</h2>
-        <p>Étudiant en 2ᵉ année de BTS SIO</p>
-        <p>Option : SISR / SLAM</p>
-    </section>
+        <li><a href="index.html#parcours" data-key="parcours">Parcours</a></li>
 
-    <!-- À propos -->
-    <section id="apropos">
-        <h2>À propos de moi</h2>
+        <li><a href="stage.html" data-key="stage">Stage</a></li>
 
-        <br>
+        <li><a href="index.html#cv" data-key="cv">CV</a></li>
 
-        <p>
-            Je suis actuellement étudiant en deuxième année de BTS SIO.
-            Je m'intéresse particulièrement à l'informatique, au développement
-            et aux nouvelles technologies.
-        </p>
+        <li><a href="index.html#contact" data-key="contact" class="nav-cta">Contact</a></li>
 
-        <br>
+      </ul>
+    </div>
+  </header>
 
-        <p>
-            Durant ma formation, j'ai réalisé plusieurs projets qui m'ont permis
-            de développer mes compétences techniques et professionnelles.
-        </p>
-    </section>
+  <main id="contenu">
 
-    <!-- Compétences -->
-    <section id="competences">
-        <h2>Mes compétences</h2>
-
-        <div class="competences">
-            <span class="competence">HTML</span>
-            <span class="competence">CSS</span>
-            <span class="competence">JavaScript</span>
-            <span class="competence">PHP</span>
-            <span class="competence">SQL</span>
-            <span class="competence">Python</span>
-            <span class="competence">Git</span>
-            <span class="competence">Linux</span>
+    <section class="hero" id="accueil" data-section>
+      <canvas id="reseau" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        <div>
+          <p class="badge"><span class="dot" aria-hidden="true"></span>Recherche de stage du 4 janvier au 12 février 2027</p>
+          <h1>Ibrahim DIALLO</h1>
+          <p class="hero-role" aria-live="off"><span id="roles" data-roles="[&quot;étudiant en BTS SIO option SISR&quot;, &quot;passionné de réseaux et de systèmes&quot;, &quot;futur administrateur d&#x27;infrastructures&quot;]">étudiant en BTS SIO option SISR</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="lead">Je construis, je configure et je teste des infrastructures : serveurs Linux et Windows, annuaires, VLAN, téléphonie et baies de brassage.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="index.html#projets">Voir mes projets</a>
+            <a class="btn btn-ghost" href="cv/C_V_2026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Télécharger mon CV</a>
+            <a class="btn btn-ghost" href="index.html#contact">Me contacter</a>
+          </div>
         </div>
+        <div class="hero-phones" aria-hidden="true">
+          <span class="phone"><img src="images/mini/baie-arriere-avant.jpg" alt=""></span>
+          <span class="phone"><img src="images/mini/baie-arriere-apres.jpg" alt=""></span>
+        </div>
+      </div>
     </section>
 
-    <!-- Projets -->
-    <section id="projets">
-        <h2>Mes projets</h2>
+    <section class="section" id="profil" data-section>
+      <div class="container about-grid">
+        <div>
+          <h2>Profil</h2>
 
-        <div class="projets">
+          <p>Je suis Ibrahim DIALLO, étudiant en deuxième année de BTS SIO à Notre-Dame de la Paix de Ploemeur, avec une spécialisation SISR.</p>
 
-            <div class="projet">
-                <h3>Projet 1 - Site web</h3>
+          <p>Ma première année m&#x27;a permis de découvrir plusieurs domaines de l&#x27;informatique. De septembre à janvier, j&#x27;ai travaillé aussi bien le développement que les réseaux. Depuis janvier, je me suis davantage orienté vers l&#x27;administration des réseaux et des systèmes.</p>
 
-                <p>
-                    Création d'un site web en HTML, CSS et JavaScript
-                    dans le cadre de ma formation.
-                </p>
-
-                <br>
-
-                <p><strong>Technologies :</strong> HTML, CSS, JavaScript</p>
-            </div>
-
-            <div class="projet">
-                <h3>Projet 2 - Application</h3>
-
-                <p>
-                    Développement d'une application permettant de gérer
-                    des utilisateurs et des données.
-                </p>
-
-                <br>
-
-                <p><strong>Technologies :</strong> PHP, SQL</p>
-            </div>
-
-            <div class="projet">
-                <h3>Projet 3 - Réseau</h3>
-
-                <p>
-                    Mise en place et configuration d'un environnement
-                    réseau dans le cadre du BTS SIO.
-                </p>
-
-                <br>
-
-                <p><strong>Technologies :</strong> Linux, Windows, Cisco</p>
-            </div>
+          <p>Mon objectif est de comprendre ce que je mets en place, et pas seulement d&#x27;appliquer des commandes.</p>
 
         </div>
+        <div class="card">
+          <dl class="facts">
+
+            <div><dt>Formation</dt><dd>BTS SIO option SISR, 2025-2027</dd></div>
+
+            <div><dt>Localisation</dt><dd>Lorient</dd></div>
+
+            <div><dt>Mobilité</dt><dd>Permis B</dd></div>
+
+            <div><dt>Langues</dt><dd>Anglais et espagnol (notions)</dd></div>
+
+            <div><dt>Centre d&#x27;intérêt</dt><dd>Football</dd></div>
+
+          </dl>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
+    <section class="section section-alt" id="competences" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Compétences</h2>
+          <p>Les outils avec lesquels je travaille, en cours, en projet et en stage.</p>
+        </div>
+        <div class="grid skills-grid">
 
-        <br>
+          <article class="card">
+            <h3>Réseaux</h3>
+            <p>Configuration et compréhension des infrastructures réseau et de leur architecture.</p>
+            <ul class="chips">
 
-        <p>Email : prenom.nom@email.com</p>
-        <p>GitHub : github.com/mon-profil</p>
-        <p>LinkedIn : linkedin.com/in/mon-profil</p>
+              <li>IPv4</li>
+
+              <li>TCP/IP</li>
+
+              <li>DNS</li>
+
+              <li>DHCP</li>
+
+              <li>VLAN</li>
+
+              <li>Cisco Packet Tracer</li>
+
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Systèmes</h3>
+            <p>Installation, configuration et administration de systèmes et de serveurs.</p>
+            <ul class="chips">
+
+              <li>Debian / Linux</li>
+
+              <li>Windows Server</li>
+
+              <li>Active Directory</li>
+
+              <li>Utilisateurs et droits</li>
+
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Infrastructure</h3>
+            <p>Environnements virtualisés, services réseau et administration à distance.</p>
+            <ul class="chips">
+
+              <li>VirtualBox</li>
+
+              <li>Apache</li>
+
+              <li>MariaDB</li>
+
+              <li>GLPI</li>
+
+              <li>SSH</li>
+
+              <li>WinSCP</li>
+
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Sécurité</h3>
+            <p>Notions de sécurisation des infrastructures et de contrôle des accès.</p>
+            <ul class="chips">
+
+              <li>Firewall</li>
+
+              <li>NAT</li>
+
+              <li>Segmentation</li>
+
+              <li>Droits utilisateurs</li>
+
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Web</h3>
+            <p>Création de pages web statiques.</p>
+            <ul class="chips">
+
+              <li>HTML</li>
+
+              <li>CSS</li>
+
+            </ul>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 - Prénom Nom - Portfolio BTS SIO</p>
-    </footer>
+    <section class="section" id="projets" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Projets</h2>
+          <p>Des infrastructures construites en pratique. Ouvrez un projet pour voir l'objectif et ce que j'ai réalisé.</p>
+        </div>
+        <div class="grid grid-3">
 
+          <a class="card" href="projet-serveur-web-dns.html">
+            <p class="card-kicker">Systèmes</p>
+            <h3>Serveur Web &amp; DNS</h3>
+            <p>Un serveur Debian qui héberge un site web avec Apache, joignable par un nom et administré à distance.</p>
+            <ul class="chips">
+
+              <li>Debian</li>
+
+              <li>Apache</li>
+
+              <li>DNS</li>
+
+              <li>SSH</li>
+
+              <li>WinSCP</li>
+
+            </ul>
+            <span class="link-more">Lire le projet</span>
+          </a>
+
+          <a class="card" href="projet-active-directory.html">
+            <p class="card-kicker">Systèmes</p>
+            <h3>Active Directory &amp; DNS</h3>
+            <p>Un domaine Windows avec utilisateurs, groupes et poste client intégré, selon le modèle AGDLP.</p>
+            <ul class="chips">
+
+              <li>Windows Server</li>
+
+              <li>AD DS</li>
+
+              <li>DNS</li>
+
+              <li>AGDLP</li>
+
+            </ul>
+            <span class="link-more">Lire le projet</span>
+          </a>
+
+          <a class="card" href="projet-architecture-reseau.html">
+            <p class="card-kicker">Réseaux</p>
+            <h3>Architecture réseau</h3>
+            <p>Un réseau segmenté en VLAN, simulé et testé dans Cisco Packet Tracer.</p>
+            <ul class="chips">
+
+              <li>IPv4</li>
+
+              <li>VLAN</li>
+
+              <li>Routeur</li>
+
+              <li>Switch</li>
+
+              <li>Cisco Packet Tracer</li>
+
+            </ul>
+            <span class="link-more">Lire le projet</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="parcours" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Parcours</h2>
+          <p>Ma formation et mes expériences professionnelles.</p>
+        </div>
+        <ul class="timeline">
+
+          <li>
+            <span class="when">2026 &nbsp;|&nbsp; Stage</span>
+            <h3>Stage en informatique, ERE Numérique</h3>
+            <p>Période de formation en milieu professionnel, BTS</p>
+          </li>
+
+          <li>
+            <span class="when">2025 - 2027 &nbsp;|&nbsp; Formation</span>
+            <h3>BTS SIO, option SISR</h3>
+            <p>Services Informatiques aux Organisations</p>
+          </li>
+
+          <li>
+            <span class="when">2025 &nbsp;|&nbsp; Formation</span>
+            <h3>Baccalauréat professionnel AGORA</h3>
+            <p>Lycée pro St George, Vannes</p>
+          </li>
+
+          <li>
+            <span class="when">2022 &nbsp;|&nbsp; Formation</span>
+            <h3>Diplôme national du brevet</h3>
+            <p>Collège Jules Simon, Vannes</p>
+          </li>
+
+        </ul>
+        <div class="card other-exp">
+          <h3>Autres expériences professionnelles</h3>
+          <p>Périodes de formation en milieu professionnel pendant le lycée, de 2022 à 2025 : commerce, administration et informatique.</p>
+          <ul class="chips">
+
+            <li>Black Store</li>
+
+            <li>Métier Interim</li>
+
+            <li>Bureau Vallée</li>
+
+            <li>B&amp;M</li>
+
+            <li>CDI du lycée St Paul, Vannes</li>
+
+            <li>GiFi</li>
+
+            <li>ESPILON informatique</li>
+
+            <li>Missions « Argent de poche »</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stage" data-section>
+      <div class="container stage-teaser">
+        <div>
+          <h2>Mon stage en infrastructure</h2>
+          <p class="lead">ERE Numérique / Digiburo, Languidic, 2026</p>
+          <p>Durant mon stage, j&#x27;ai participé à la réorganisation d&#x27;une infrastructure informatique. L&#x27;objectif était d&#x27;améliorer l&#x27;organisation des équipements et du câblage afin de faciliter l&#x27;exploitation et les futures interventions.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="stage.html">Voir les photos avant / après</a>
+          </div>
+        </div>
+        <div class="phones-row">
+          <a class="phone" href="stage.html" aria-label="Voir la galerie du stage"><img src="images/mini/baie-arriere-apres.jpg" alt="Arrière de la baie après intervention" loading="lazy"></a>
+          <a class="phone" href="stage.html" aria-label="Voir la galerie du stage"><img src="images/mini/baie-apres.jpg" alt="Baie après réorganisation" loading="lazy"></a>
+          <a class="phone" href="stage.html" aria-label="Voir la galerie du stage"><img src="images/mini/post-apres.jpg" alt="Installation après intervention" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="cv" data-section>
+      <div class="container cv-grid">
+        <div>
+          <h2>Mon CV</h2>
+          <p class="lead">Formation, expériences et compétences sur une page.</p>
+          <p>Recherche de stage du 4 janvier au 12 février 2027.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="cv/C_V_2026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Télécharger le CV</a>
+            <a class="btn btn-ghost" href="cv/C_V_2026.pdf" target="_blank" rel="noopener">Ouvrir dans un onglet</a>
+          </div>
+        </div>
+        <div class="cv-frame">
+          <object data="cv/C_V_2026.pdf" type="application/pdf" aria-label="Aperçu du CV">
+            <div class="cv-fallback"><p>L'aperçu n'est pas disponible sur cet appareil.</p><a class="btn btn-ghost" href="cv/C_V_2026.pdf">Ouvrir le CV</a></div>
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" data-section>
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p class="lead">Un stage, une question sur mes projets ? Écrivez-moi ou appelez-moi.</p>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:ibrahim.diallo5610@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><small>Email</small><span>ibrahim.diallo5610@gmail.com</span></div></a>
+            <a class="contact-item" href="tel:+33749988033"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg><div><small>Téléphone</small><span>07 49 98 80 33</span></div></a>
+            <a class="contact-item" href="https://www.linkedin.com/in/ibrahim-diallo-645a1238a/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5m0 2a2.5 2.5 0 0 1 5 0v3"/></svg><div><small>LinkedIn</small><span>Ibrahim DIALLO</span></div></a>
+            <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><small>Localisation</small><span>Lorient</span></div></div>
+          </div>
+        </div>
+        <form class="form card" data-static="1" id="contact-form" action="#" method="post" novalidate data-mailto="ibrahim.diallo5610@gmail.com">
+                    <div class="field"><span class="hp"><label for="site_web">Ne pas remplir</label><input type="text" id="site_web" name="site_web" tabindex="-1" autocomplete="off"></span></div>
+          <div class="form-row">
+            <div class="field"><label for="nom">Nom</label><input type="text" id="nom" name="nom" required maxlength="80" autocomplete="name" placeholder="Votre nom"></div>
+            <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required maxlength="120" autocomplete="email" placeholder="vous@entreprise.fr"></div>
+          </div>
+          <div class="field"><label for="sujet">Sujet</label><input type="text" id="sujet" name="sujet" maxlength="120" placeholder="Proposition de stage"></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required maxlength="2000" placeholder="Votre message"></textarea></div>
+          <button class="btn btn-primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10 14M21 3l-7 18-4-7-7-4 18-7Z"/></svg>Envoyer le message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ibrahim DIALLO, Étudiant BTS SIO, option SISR</p>
+      <ul>
+        <li><a href="index.html#profil">Profil</a></li>
+        <li><a href="index.html#projets">Projets</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="cv/C_V_2026.pdf">CV</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Photo agrandie">
+    <div class="lightbox-inner">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+      <p class="lightbox-caption"></p>
+    </div>
+    <button class="lb-btn lb-close" type="button" aria-label="Fermer">&times;</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Photo précédente">&lsaquo;</button>
+    <button class="lb-btn lb-next" type="button" aria-label="Photo suivante">&rsaquo;</button>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
+
